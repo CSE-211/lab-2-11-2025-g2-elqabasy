@@ -4,59 +4,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apply on lists</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Mahros AL-Qabasy — Front‑End Developer & Computer Science Student</title>
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="description"
+    content="Mahros AL-Qabasy — Front-End Developer & Computer Science Student. Portfolio and contact.">
+
+
+  <script src="./js/send.js"></script>
 </head>
 
 <body>
-  <header>
+  <!-- HERO -->
+  <header id="hero" class="hero">
     <div class="container">
-      <h1>Programming Languages Comparison</h1>
+      <div class="hero-left">
+        <h1>Mahros AL-Qabasy</h1>
+        <h2>Front‑End Developer & Computer Science Student</h2>
+        <p class="lead">Crafting clean interfaces and solving problems one line at a time.</p>
+        <div class="meta">
+          <span>University ID: <strong>223106831</strong></span>
+          <span>Subject: <strong>Web Programming</strong></span>
+          <span>Instructor: <strong>Dr. Samy Ghoneim</strong></span>
+        </div>
+        <span class="tooltip" data-tooltip="Let's connect!" data-position="right">
+          <a href="#contact" class="btn">
+            Follow Me?
+          </a>
+        </span>
+      </div>
 
+      <div class="profile-pic-wrapper">
+        <img src="assets/mahros.photo.jpg" alt="Mahros AL-Qabasy" class="profile-pic">
+        <span class="profile-badge" title="Certified Front-End Developer"></span>
+      </div>
     </div>
   </header>
+
+  <!-- QUOTE -->
+  <section id="quote" class="quote-section">
+    <div class="container narrow">
+      <blockquote>“Code is not just logic — it’s the art of making ideas tangible.”</blockquote>
+      <p class="quote-author">— Mahros AL-Qabasy</p>
+    </div>
+  </section>
+
+  <!-- MAIN -->
   <main>
-    <div class="container">
-
-      <!-- <div class="container"> -->
-      <div class="comparison behaviour">
-        <h2>Programming Languages and Their Types</h2>
-        <ul id="languages">
-          <li class="language interpreted">Python</li>
-          <li class="language interpreted">JavaScript</li>
-          <li class="language compiled">Java</li>
-          <li class="language compiled">C#</li>
-          <li class="language compiled">Ruby</li>
-          <li class="language compiled">Rust</li>
-        </ul>
-
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <p>I’m a computer science student and front‑end developer passionate about creating intuitive and efficient web
+          experiences. I enjoy solving technical challenges and learning new technologies to improve my craft.</p>
       </div>
-      <h2>Programming languages and their speeds</h2>
-      <ol id="speeds" type="1">
-        <li>Rust</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>C#</li>
-        <li>Ruby</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-      </ol>
-    </div>
+    </section>
 
-    <br>
-    <div class="container">
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Git</div>
+          <div class="skill">Linux</div>
+        </div>
+      </div>
+    </section>
 
-      <figure>
-        <img src="assets/reel4.jpg" alt="Programming Languages Comparison">
-        <figcaption>Figure 1: A comparison of programming languages based on their types and speeds.</figcaption>
-      </figure>
-      <!-- </div> -->
-    </div>
+    <!-- PROJECT -->
+    <section id="project" class="section">
+      <div class="container narrow">
+        <h2>Featured Project</h2>
+        <p>Solving a Bandit challenge from OverTheWire — demonstrates problem solving, shell skills, and debugging.</p>
+        <div class="video-container">
+          <video src="./media/video.edited.mp4" autoplay controls loop title="Featured Project Video"></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="subtitle">Feel free to reach out for collaboration, questions, or opportunities.</p>
+
+        <div class="contact-wrapper" role="region" aria-label="Contact">
+          <div class="contact-details">
+            <p><strong>GitHub:</strong> <a href="https://github.com/elqabasy" target="_blank"
+                rel="noopener">github.com/elqabasy</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mmm500512@gu.edu.eg">mmm500512@gu.edu.eg</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/elqabasy" target="_blank"
+                rel="noopener">linkedin.com/in/elqabasy</a></p>
+          </div>
+
+          <div class="contact-message">
+            <form action="#" method="post" novalidate onsubmit="return false;">
+              <input id="c-name" name="name" type="text" placeholder="Mahros AL-Qabasy" aria-label="Name">
+              <input id="c-email" name="email" type="email" placeholder="mahros@gmail.com" aria-label="Email">
+              <textarea id="c-message" name="message" rows="4" placeholder="Short message"
+                aria-label="Message"></textarea>
+              <button type="button" class="btn" onclick="sendWhatsappMessage()">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>Created with &heartsuit; by Mahros AL-Qabasy</p>
-    </div>
+    <p>Created with <span>&hearts;</span> by
+      <span class="tooltip" data-tooltip="Yes! it's me.">Mahros</span>
+    </p>
   </footer>
 </body>
 
